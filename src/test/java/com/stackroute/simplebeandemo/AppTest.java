@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.simplebeandemo;
 
 import static org.junit.Assert.assertTrue;
 

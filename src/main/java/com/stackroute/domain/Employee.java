@@ -1,24 +1,31 @@
-package com.stackroute;
+package com.stackroute.domain;
 
 public class Employee {
 
     int empId;
+    String empName;
+
+    public Employee(){
+
+    }
+
+    public Employee(int empId , String empName){
+        this.empId = empId;
+        this.empName = empName;
+    }
     public String getEmpName() {
         return empName; }
 
     public void setEmpName(String empName) {
         this.empName = empName; }
 
-    String empName;
-
-    public int getEmpId() {
+        public int getEmpId() {
         return empId; }
 
     public void setEmpId(int empId) {
         this.empId = empId;
     }
-    public Employee() {
-    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -26,4 +33,6 @@ public class Employee {
                 ", name='" + empName + '\'' +
                 '}';
     }
+
+
 }
